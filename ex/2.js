@@ -11,7 +11,7 @@ console.log(
 console.log(
   "Part 2:", input.split("\n").map(e => e.split(' ')).map(e => [
     { 'A': 0, 'B': 1, 'C': 2 }[e[0]],
-    e[1    ]
+    e[1]
   ]).map(e => [
     e[0],
     (e[1] === 'X') ? (e[0] + 2) % 3 : ((e[1] === 'Y') ? e[0] : ((e[0] + 1) % 3))
