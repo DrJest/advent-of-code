@@ -9,7 +9,7 @@ console.log(
 );
 
 console.log(
-  "Part 1:",
+  "Part 2:",
   input
     .split("\n")
     .map(e => e.split(",").map(p => p.split("-").map(Number)))
