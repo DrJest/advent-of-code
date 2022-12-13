@@ -32,7 +32,7 @@ console.log(
   input
     .split('\n\n')
     .map((e) => e.split('\n').map(t => JSON.parse(t)))
-    .reduce((a, e, i) => JSON.stringify(e) !== JSON.stringify(e.slice().sort(sort)) ? a : a + i + 1, 0)
+    .reduce((a, e, i) => JSON.stringify(e) !== JSON.stringify(e.sort(sort)) ? a : a + i + 1, 0)
 )
 
 console.log(
