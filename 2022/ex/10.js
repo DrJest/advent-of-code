@@ -5,7 +5,7 @@ console.log(
   input
     .split('\n')
     .map(l => l.trim())
-    .reduce((a, e) => e === 'noop' ? a.concat(e) : a.concat('addx', e), [])
+    .reduce((a, e) => e === 'noop' ? a.concat(e) : a.concat('noop', e), [])
     .map(e => e.split(' '))
     .reduce((a, e, i) => ({
       x: e.length === 1 ? a.x : a.x + Number(e[1]),
@@ -19,7 +19,7 @@ console.log(
   input
     .split('\n')
     .map(l => l.trim())
-    .reduce((a, e) => e === 'noop' ? a.concat(e) : a.concat('addx', e), [])
+    .reduce((a, e) => e === 'noop' ? a.concat(e) : a.concat('noop', e), [])
     .map(e => e.split(' '))
     .reduce((a, e, i) => ({
       x: e.length === 1 ? a.x : a.x + Number(e[1]),
